@@ -1,16 +1,23 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; 
+  padding-right: 50px;
+  padding-left: 50px;
+  background-image: url("../images/BG2.jpg");
+
 }
+#allPage{
+	background-color: white;
+	opacity: 90%;
+	}
 
 a {
   color: #00B7FF;
 }
 footer {
 	background-color: #DC260C;
-	font-size: 70%;
+	font-size: 14px;
 	text-align: center;
-	padding: 0.5em 0;
+	padding: 0.5em 0.5em;
 	color: white;
 }
 #languageLogo {
@@ -52,6 +59,7 @@ form{
 	padding: 10px;
 	box-shadow: 5px 5px #C0C0C0;
 	text-align: center;
+	margin: 40px;
 }
 #footerLogo {
 	font-size: 40px;
