@@ -6,3 +6,57 @@ body {
 a {
   color: #00B7FF;
 }
+footer {
+	background-color: #DC260C;
+	font-size: 70%;
+	text-align: center;
+	padding: 0.5em 0;
+	color: white;
+}
+#languageLogo {
+	font-size: 100px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1.7cm;
+
+}
+#aboutText {
+	font-size: 24px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+  }
+  #textLarge {
+	font-size: 40px;
+	font-weight: bolder;
+	text-shadow: 2px 2px;
+	color:midnightblue;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+form{
+	margin-left: 5cm;
+}
+#projects {
+	border-style: solid;
+	border-color: #FF3300;
+	border-radius: 10px;
+	padding: 10px;
+	box-shadow: 5px 5px #C0C0C0;
+	text-align: center;
+}
+#footerLogo {
+	font-size: 40px;
+	text-align: center;
+}
+
+
+
