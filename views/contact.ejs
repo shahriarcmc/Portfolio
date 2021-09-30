@@ -1,48 +1,51 @@
-<% include partials/header.ejs %>
-  
-<h1><%= title %></h1><br><br>
+<% include partials/contact_header.ejs %>
 
-<form action="home.html" method="post">
-    <table class="tableCenter" style="width: 40%">
-        <tr>
-            <td  style="width: 256px">
-                <label>Your Email:</label>
-            </td>
-            <td><input name="txtEmail" type="email" required="required" size="36" tabindex="3" /></td>
-        </tr>
-        <tr>
-            <td style="width: 256px"><label>First Name:</label></td>
-            <td><input name="txtfName" type="fName" required="required" size="36" tabindex="5" /></td>
-        </tr>
-        <tr>
-            <td style="width: 256px">
-                <label>Last Name:</label>
-            </td>
-            <td><input name="txtlName" type="lName" required="required" size="36" tabindex="7" /></td>
-        </tr>
-        <tr>
-            <td style="width: 256px">
-                Phone:</td>
-            <td><input name="txtlPhone" type="phone" required="required" size="36" tabindex="7" /></td>
+    <h1 id="textLarge">
+        <%= title %>
+    </h1><br><br>
 
-            <td>&nbsp;</td>
-        </tr>
-        
-        <tr>
-            <td class="auto-style1" style="width: 256px">Messeage :</td>
-            <td> <textarea cols="50" name="txtArea" rows="10" tabindex="19"></textarea></td>
-        </tr>
-        <tr>
-            <td class="auto-style1" style="width: 256px">
-                <input name="submit" tabindex="21" type="submit" value="Send Now">
-            </td>
-            <td>
-                <input name="Reset1" tabindex="23" type="reset" value="Clear">
-            </td>
-        </tr>
-    </table>
+    <form action="home.html" method="post">
+        <table class="tableCenter" style="width: 40%">
+            <tr>
+                <td style="width: 256px">
+                    <label>Your Email:</label>
+                </td>
+                <td><input name="txtEmail" type="email" required="required" size="36" tabindex="3" /></td>
+            </tr>
+            <tr>
+                <td style="width: 256px"><label>First Name:</label></td>
+                <td><input name="txtfName" type="fName" required="required" size="36" tabindex="5" /></td>
+            </tr>
+            <tr>
+                <td style="width: 256px">
+                    <label>Last Name:</label>
+                </td>
+                <td><input name="txtlName" type="lName" required="required" size="36" tabindex="7" /></td>
+            </tr>
+            <tr>
+                <td style="width: 256px">
+                    Phone:</td>
+                <td><input name="txtlPhone" type="phone" required="required" size="36" tabindex="7" /></td>
+
+                <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td class="auto-style1" style="width: 256px">Messeage :</td>
+                <td> <textarea cols="50" name="txtArea" rows="10" tabindex="19"></textarea></td>
+            </tr>
+            <tr>
+                <td class="auto-style1" style="width: 256px">
+                    <input name="submit" tabindex="21" type="submit" value="Send Now">
+                </td>
+                <td>
+                    <input name="Reset1" tabindex="23" type="reset" value="Clear">
+                </td>
+            </tr>
+        </table>
     </form><br><br>
-</body>
-</html>
 
-<% include partials/footer.ejs %>
+    </div>
+
+
+    <% include partials/contact_footer.ejs %>

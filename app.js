@@ -31,22 +31,10 @@ app.use(express.static(path.join(__dirname, 'routes')));
 
 app.use('/', indexRouter);
 app.use('/projects', projectsRouter);
-
-
-app.use('/', indexRouter);
 app.use('/services', servicesRouter);
-
-
-app.use('/', indexRouter);
 app.use('/about', aboutRouter);
-
-app.use('/', indexRouter);
 app.use('/contact', contactRouter);
-
-app.use('/', indexRouter);
 app.use('/users', usersRouter);
-
-
 
 
 
