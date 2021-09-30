@@ -66,8 +66,12 @@ form{
 	text-align: center;
 }
 td {
+	text-align: left;
+  }
+  td.serviceTable {
 	text-align: center;
   }
+
   .tableCenter {
 	margin-left: auto;
 	margin-right: auto;
