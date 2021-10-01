@@ -3,49 +3,40 @@
     <h1 id="textLarge">
         <%= title %>
     </h1><br>
+    <!-- phone and email -->
     <div id=contactLogo>
         <a href="tel:+16477688021"><i class="fas fa-phone-square"></i></a>
         <a href="mailto:shahriar.cmcr@gmail.com"><i class="fas fa-envelope-open-text"></i></a>
     </div><br><br>
-    <form action="home.html" method="post">
-        <table class="tableCenter" style="width: 40%">
-            <tr>
-                <td style="width: 256px">
-                    <label>Your Email:</label>
-                </td>
-                <td><input name="txtEmail" type="email" required="required" size="36" tabindex="3" /></td>
-            </tr>
-            <tr>
-                <td style="width: 256px"><label>First Name:</label></td>
-                <td><input name="txtfName" type="fName" required="required" size="36" tabindex="5" /></td>
-            </tr>
-            <tr>
-                <td style="width: 256px">
-                    <label>Last Name:</label>
-                </td>
-                <td><input name="txtlName" type="lName" required="required" size="36" tabindex="7" /></td>
-            </tr>
-            <tr>
-                <td style="width: 256px">
-                    Phone:</td>
-                <td><input name="txtlPhone" type="phone" required="required" size="36" tabindex="7" /></td>
+    <div class="container">
+    <fieldset>
+        <!-- fillable form -->
+        <h2>Please complete all the fields below</h2><br>
 
-                <td>&nbsp;</td>
-            </tr>
+        <form name='regForm'>
+            <p><label for="fname">First name:<sup style="color:rgb(0, 0, 0)">*</sup> </label>
+                <input type="text" name="fname" tabindex="1" size="27" />
+            </p>
+            <p><label for="lname">Last name:<sup style="color:rgb(0, 0, 0)">*</sup> </label>
+                <input type="text" name="lname" tabindex="3" size="27" />
+            </p>
+            <p><label for="email">Email:<sup style="color:rgb(0, 0, 0)">*</sup> </label>
+                <input type="text" name="email" tabindex="5" size="27" />
+            </p><br><br>
+            <p><label for="phone">Phone:<sup style="color:rgb(0, 0, 0)">*</sup> </label>
+                <input type="number" name="phone" tabindex="7" size="27" />
+            </p><br><br>
+            <p><label for="messeage">Message:<sup style="color:rgb(0, 0, 0)">*</sup> </label>
+                ​<textarea id="txtArea" name="messeage" rows="5" cols="25"></textarea><br><br>
 
-            <tr>
-                <td class="auto-style1" style="width: 256px">Messeage :</td>
-                <td> <textarea cols="50" name="txtArea" rows="10" tabindex="19"></textarea></td>
-            </tr>
-            <tr>
-                <td class="auto-style1" style="width: 256px">
-                    <input name="submit" tabindex="21" type="submit" value="Send Now">
-                </td>
-                <td>
-                    <input name="Reset1" tabindex="23" type="reset" value="Clear">
-                </td>
-            </tr>
-        </table>
-    </form><br><br>
 
+                <input class="button" type="submit" name="submit" value="Register Now" tabindex="21"
+                    onClick="return formValidation();" />
+                <input class="button" type="reset" name="reset" value="Clear Form" tabindex="21"
+                    onClick="return confirmreset()" />
+
+ 
+        </form><br>
+    </fieldset>
+    </div>
     <% include partials/contact_footer.ejs %>

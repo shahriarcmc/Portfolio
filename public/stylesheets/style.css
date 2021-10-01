@@ -1,3 +1,8 @@
+/* File name - style.css
+// Author - Shahriar Moinuddin
+// Student id - 300955901
+// Date - 30/9/2021 */
+
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; 
   padding-right: 50px;
@@ -87,4 +92,20 @@ td {
 	text-align: center;
 	padding-left: 50px;
 	padding-right: 50px;
+}
+
+/* .container {
+	width: 800px;
+	
+} */
+label {
+	float: left;
+	width: 250px;
+	text-align: right;
+}
+
+fieldset {
+	background-color: #F65247;
+	opacity: 80%;
+	text-align: center;
 }
