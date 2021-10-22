@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('projects', { 
     title: 'Projects',
-    userName: 'Shahriar Moinuddin' });
+    userName: 'Shahriar Moinuddin',userName: req.user ? req.user.username : '' });
 });
 
 module.exports = router;
