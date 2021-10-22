@@ -1,3 +1,4 @@
+// installed 3rd party packages
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -6,9 +7,11 @@ var logger = require('morgan');
 let compress = require('compression');
 let bodyParser = require('body-parser');
 let methodOverride = require('method-override');
-let session = require('express-session');
 let flash = require('connect-flash');
+
+// modules for authentication
 let passport = require('passport');
+let session = require('express-session');
 
 //Database setup
 let mongoose = require('mongoose');
@@ -24,11 +27,15 @@ mongoDB.once('open', ()=>{
 });
 
 let app = express();
+
+//setup express session
 app.use(session({
   saveUninitialized: true,
   resave: true,
   secret: "sessionSecret"
 }));
+
+
 let indexRouter = require('../routes/index');
 let usersRouter = require('../routes/users');
 let projectsRouter = require('../routes/projects');
@@ -36,11 +43,6 @@ let servicesRouter = require('../routes/services');
 let contactRouter = require('../routes/contact');
 let aboutRouter = require('../routes/about');
 let businessRouter = require('../routes/business');
-
-
-
-
-
 
 
 // view engine setup
@@ -55,8 +57,10 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.static(path.join(__dirname, '../node_modules')));
 app.use(express.static(path.join(__dirname, '../routes')));
 
-// Sets up passport
+// initialize flash
 app.use(flash());
+
+// initialize passport
 app.use(passport.initialize());
 app.use(passport.session());
 

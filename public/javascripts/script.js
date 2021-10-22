@@ -1,7 +1,7 @@
 // File name - script.js
 // Author - Shahriar Moinuddin
 // Student id - 300955901
-// Date - 30/9/2021
+// Date - 22/10/2021
 
 
 

@@ -1,3 +1,8 @@
+// File name - app.js
+// Author - Shahriar Moinuddin
+// Student id - 300955901
+// Date - 22/10/2021
+
 console.log('Goes to the client side.');
 
 if(getTitle == "Business List")
